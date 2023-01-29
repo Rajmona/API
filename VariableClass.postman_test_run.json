@@ -1,0 +1,120 @@
+{
+	"id": "70fa1bae-f0f0-4635-bafa-0b3d3726ff30",
+	"name": "VariableClass",
+	"timestamp": "2023-01-29T03:22:30.757Z",
+	"collection_id": "0-09770830-f596-4b94-b93d-ebcba21bde60",
+	"folder_id": 0,
+	"environment_id": "3300cf5b-96eb-4e0a-9f8b-188f33d6caee",
+	"totalPass": 6,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "235268cf-fb24-40aa-bc72-9bc1fd6b3461",
+			"name": "Create Request",
+			"time": 289,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"New Testing": true
+			},
+			"testPassFailCounts": {
+				"New Testing": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				921,
+				289
+			],
+			"allTests": [
+				{
+					"New Testing": true
+				},
+				{
+					"New Testing": true
+				}
+			]
+		},
+		{
+			"id": "f51e87bf-2f3a-4365-8a71-591a633ad8b8",
+			"name": "Update Request",
+			"time": 302,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"New Testing": true
+			},
+			"testPassFailCounts": {
+				"New Testing": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				448,
+				302
+			],
+			"allTests": [
+				{
+					"New Testing": true
+				},
+				{
+					"New Testing": true
+				}
+			]
+		},
+		{
+			"id": "a831d165-5e00-4ed0-ba0e-ddfaabe58ab9",
+			"name": "Delete Request",
+			"time": 306,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"New Testing": true
+			},
+			"testPassFailCounts": {
+				"New Testing": {
+					"pass": 2,
+					"fail": 0
+				}
+			},
+			"times": [
+				483,
+				306
+			],
+			"allTests": [
+				{
+					"New Testing": true
+				},
+				{
+					"New Testing": true
+				}
+			]
+		}
+	],
+	"count": 2,
+	"totalTime": 2749,
+	"collection": {
+		"requests": [
+			{
+				"id": "235268cf-fb24-40aa-bc72-9bc1fd6b3461",
+				"method": "POST"
+			},
+			{
+				"id": "f51e87bf-2f3a-4365-8a71-591a633ad8b8",
+				"method": "PUT"
+			},
+			{
+				"id": "a831d165-5e00-4ed0-ba0e-ddfaabe58ab9",
+				"method": "DELETE"
+			}
+		]
+	}
+}

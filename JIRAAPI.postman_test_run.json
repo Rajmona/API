@@ -1,0 +1,111 @@
+{
+	"id": "95e1cd2f-4af8-49cb-86cb-b094b157590c",
+	"name": "JIRAAPI",
+	"timestamp": "2023-02-03T17:11:25.012Z",
+	"collection_id": "0-19afdcf6-a529-4c54-b88a-84059fe7ce42",
+	"folder_id": 0,
+	"environment_id": "7c9a8440-b296-435e-b912-d108f304f7a9",
+	"totalPass": 3,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "62dcb576-fb1e-4afb-81e5-c3371ad1d1b7",
+			"name": "POST JIRA",
+			"url": "https://janrestapimona2023.atlassian.net/rest/api/2/issue",
+			"time": 599,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				599
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "99153d07-99b6-41c3-af1f-0447f36986d5",
+			"name": "UPDATE",
+			"url": "https://janrestapimona2023.atlassian.net/rest/api/2/issue/10068",
+			"time": 455,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				455
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "a42b6843-4cd1-4a9e-ac88-1941db963414",
+			"name": "New Request",
+			"url": "https://janrestapimona2023.atlassian.net/rest/api/2/issue/10068",
+			"time": 410,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				410
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1464,
+	"collection": {
+		"requests": [
+			{
+				"id": "62dcb576-fb1e-4afb-81e5-c3371ad1d1b7",
+				"method": "POST"
+			},
+			{
+				"id": "99153d07-99b6-41c3-af1f-0447f36986d5",
+				"method": "PUT"
+			},
+			{
+				"id": "a42b6843-4cd1-4a9e-ac88-1941db963414",
+				"method": "DELETE"
+			}
+		]
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"id": "89bd9c22-f2ae-4ac1-9be5-9055fafaa632",
+	"name": "ServiceNowOAuth",
+	"timestamp": "2023-02-04T16:37:51.980Z",
+	"collection_id": "0-122ce496-cdb1-423b-b361-790e42f3a927",
+	"folder_id": 0,
+	"environment_id": "7c9a8440-b296-435e-b912-d108f304f7a9",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2e18ec78-a732-4476-9c80-3b6530dc85ca",
+			"name": "https://dev144453.service-now.com/oauth_token.do",
+			"url": "https://dev144453.service-now.com/oauth_token.do",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				188
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f9033531-1668-4111-b5eb-94ac426596bc",
+			"name": "Get All incidents",
+			"url": "https://dev144453.service-now.com/api/now/table/change_request?sysparm_fields=description,short_description&sysparm_limit=1",
+			"time": 257,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Get All incidents Status code": true
+			},
+			"testPassFailCounts": {
+				"Get All incidents Status code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				257
+			],
+			"allTests": [
+				{
+					"Get All incidents Status code": true
+				}
+			]
+		},
+		{
+			"id": "7fc02a30-11cf-4d85-9cbb-8519d1602682",
+			"name": "Create Request Copy",
+			"url": "https://dev144453.service-now.com/api/now/table/change_request?sysparm_fields=short_description,description,sys_id",
+			"time": 348,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"New Testing": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"New Testing": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				348
+			],
+			"allTests": [
+				{
+					"New Testing": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "b9e25f4a-a3ff-4f6a-a783-3512aa087790",
+			"name": "Update Request Copy",
+			"url": "https://dev144453.service-now.com/api/now/table/change_request/a04a3cc61b64e1107df3fcc8cc4bcb1d",
+			"time": 239,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				239
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1032,
+	"collection": {
+		"requests": [
+			{
+				"id": "2e18ec78-a732-4476-9c80-3b6530dc85ca",
+				"method": "POST"
+			},
+			{
+				"id": "f9033531-1668-4111-b5eb-94ac426596bc",
+				"method": "GET"
+			},
+			{
+				"id": "7fc02a30-11cf-4d85-9cbb-8519d1602682",
+				"method": "POST"
+			},
+			{
+				"id": "b9e25f4a-a3ff-4f6a-a783-3512aa087790",
+				"method": "PUT"
+			}
+		]
+	}
+}
